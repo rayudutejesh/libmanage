@@ -83,7 +83,7 @@ const useStyles = makeStyles((theme) => ({
     padding: "0 20px",
   },
 }));
-function SignIn({ history }) {
+function Home({ history }) {
   const classes = useStyles();
   const [isSigntab, setSigntab] = useState(false);
   const [isSignup, setSignup] = useState(false);
@@ -150,4 +150,4 @@ function SignIn({ history }) {
     </div>
   );
 }
-export default withRouter(SignIn);
+export default withRouter(Home);
