@@ -90,7 +90,7 @@ function SignIn({ history }) {
 
   const { currentUser } = useContext(AuthContext);
   if (currentUser) {
-    return <Redirect to="/" />;
+    return <Redirect to="/Dashboard" />;
   }
 
   const handleClick = () => {

@@ -58,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
     padding: "0 30px",
   },
 }));
-export default function SignUp({ history }) {
+export default function SignUp() {
   const classes = useStyles();
   const handleSignUp = useCallback(
     async (event) => {
@@ -68,12 +68,11 @@ export default function SignUp({ history }) {
         await firebase
           .auth()
           .createUserWithEmailAndPassword(email.value, password.value);
-        history.push("/");
       } catch (error) {
         alert(error);
       }
     },
-    [history]
+    []
   );
   return (
     <Container

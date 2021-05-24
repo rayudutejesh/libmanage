@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import Home from "./components/SignIn"
+import Home from "./components/Home"
 import AddBook from "./components/AddBook";
 import Dashboard from "./components/Dashboard";
 import BookDetails from "./components/BookDetails";
@@ -18,9 +18,9 @@ function App() {
           <Switch>
             <Fragment>
               <div className="content">
-                <PrivateRoute exact path="/" component={Dashboard} />
+                <PrivateRoute exact path="/Dashboard" component={Dashboard} />
                 
-                <Route exact path="/Home" component={Home} />
+                <Route exact path="/" component={Home} />
                 <PrivateRoute exact path="/book/:id" component={BookDetails} />
                 <PrivateRoute exact path="/author/:author" component={AuthorDetails} />
                 <PrivateRoute exact path="/add/book" component={AddBook} />

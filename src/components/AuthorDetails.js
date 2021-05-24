@@ -132,7 +132,7 @@ const AuthorDetails = (props) => {
         )}
 
         <div className={classes.fab}>
-          <Link style={{ textDecoration: "none" }} to="/">
+          <Link style={{ textDecoration: "none" }} to="/Dashboard">
             <Button>
               <HomeIcon style={{ color: "#009961" }} />
             </Button>

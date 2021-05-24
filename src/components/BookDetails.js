@@ -165,7 +165,7 @@ const BookDetails = (props) => {
           </div>
         )}
         <div className={classes.fab}>
-          <Link style={{ textDecoration: "none" }} to="/">
+          <Link style={{ textDecoration: "none" }} to="/Dashboard">
             <Button>
               <HomeIcon />
             </Button>
