@@ -115,7 +115,7 @@ function AddBook(props) {
       return;
     }
     if (!isValid) {
-      alert("ISBN");
+      alert("ISBN is not valid");
       return;
     }
 
